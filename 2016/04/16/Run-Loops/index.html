@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="兴趣使然">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Speak Now Blogs">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="翻译自Threading Programming Guide Run Loopsrunloops是线程的基础架构的一部分。runloop是一个事件处理循环，根据工作安排去工作和协调接收到的事件。runloop在有任务分配的时候让线程工作运行，没工作的时候就处于休眠状态。 runloop管理不是完成自动的。你必须设计 你的代码在适当的时间启动运行runloop和响应传进的事件。Cocoa和CoreF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Run Loops">
+<meta property="og:url" content="http://yoursite.com/2016/04/16/Run-Loops/index.html">
 <meta property="og:site_name" content="Speak Now Blogs">
-<meta property="og:description" content="兴趣使然">
+<meta property="og:description" content="翻译自Threading Programming Guide Run Loopsrunloops是线程的基础架构的一部分。runloop是一个事件处理循环，根据工作安排去工作和协调接收到的事件。runloop在有任务分配的时候让线程工作运行，没工作的时候就处于休眠状态。 runloop管理不是完成自动的。你必须设计 你的代码在适当的时间启动运行runloop和响应传进的事件。Cocoa和CoreF">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-17T13:58:14.225Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Speak Now Blogs">
-<meta name="twitter:description" content="兴趣使然">
+<meta name="twitter:title" content="Run Loops">
+<meta name="twitter:description" content="翻译自Threading Programming Guide Run Loopsrunloops是线程的基础架构的一部分。runloop是一个事件处理循环，根据工作安排去工作和协调接收到的事件。runloop在有任务分配的时候让线程工作运行，没工作的时候就处于休眠状态。 runloop管理不是完成自动的。你必须设计 你的代码在适当的时间启动运行runloop和响应传进的事件。Cocoa和CoreF">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/04/16/Run-Loops/"/>
 
 
 
 
 
-  <title>Speak Now Blogs</title>
+  <title>Run Loops | Speak Now Blogs</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,130 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Huang Jin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Speak Now Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/16/hello-world/" itemprop="url">Hello!</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-16T21:32:52+08:00">
-                2018-04-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>欢迎来到我的博客！<br>一直以来想写博客来总结和分享下技术，但是太懒了，总是耽搁下来。为了鞭策自己，以后会经常更新博客，记录下自己的成长。由于词穷，想不到什么好写的，暂时写下这些。</p>
-<p>记录下博客时间：创建于2016年4月16号晚上。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -380,9 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/04/16/Run-Loops/" itemprop="url">Run Loops</a></h1>
+          <h1 class="post-title" itemprop="name headline">Run Loops</h1>
         
 
         <div class="post-meta">
@@ -454,9 +331,7 @@
       
 
       
-        
-          
-            <p>翻译自<a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW1" target="_blank" rel="noopener">Threading Programming Guide</a></p>
+        <p>翻译自<a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW1" target="_blank" rel="noopener">Threading Programming Guide</a></p>
 <h1 id="Run-Loops"><a href="#Run-Loops" class="headerlink" title="Run Loops"></a>Run Loops</h1><p>runloops是线程的基础架构的一部分。runloop是一个事件处理循环，根据工作安排去工作和协调接收到的事件。runloop在有任务分配的时候让线程工作运行，没工作的时候就处于休眠状态。</p>
 <p>runloop管理不是完成自动的。你必须设计 你的代码在适当的时间启动运行runloop和响应传进的事件。Cocoa和CoreFoundation都提供runloop对象去帮助你配置和管理你线程的runloop。你的app不需要显示的创建这些对象；每个线程包括app主线程都有和runloop有关对象。只有子线程需要显示的运行runloop，但是app框架会自动给主线程设置和运行runloop当做app启动处理的一部分。</p>
 <h1 id="Anatomy-of-a-Run-Loop—解析runloop"><a href="#Anatomy-of-a-Run-Loop—解析runloop" class="headerlink" title="Anatomy of a Run Loop—解析runloop"></a>Anatomy of a Run Loop—解析runloop</h1><p>runloop物如其名。runloop就是进入循环的线程并且经常运行事件处理程序去响应传进来的事件。你的代码提供条件控制用于实现runloop实际运行部分，换句话说，你的代码提供while或者for循环去驱动runloop。在runloop里，你用一个runloop对象去运行事件处理——接收事件和调用已安装的事件响应程序的代码。</p>
@@ -559,8 +434,6 @@
 </ul>
 <p>如果您选择使用运行循环，则配置和设置很简单。就像所有线程编程一样，你应该有一个计划来在适当的情况下退出你的辅助线程。通过让它退出而不是强制终止一个线程总是更好。有关如何配置和退出运行循环的信息在“使用运行循环对象”中介绍。</p>
 
-          
-        
       
     </div>
     
@@ -577,12 +450,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/16/hello-world/" rel="prev" title="Hello!">
+                Hello! <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -592,10 +481,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -603,6 +493,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -623,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -675,6 +578,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Run-Loops"><span class="nav-number">1.</span> <span class="nav-text">Run Loops</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Anatomy-of-a-Run-Loop—解析runloop"><span class="nav-number">2.</span> <span class="nav-text">Anatomy of a Run Loop—解析runloop</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-Loop-Modes"><span class="nav-number">2.1.</span> <span class="nav-text">Run Loop Modes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Input-Sources-输入源"><span class="nav-number">2.2.</span> <span class="nav-text">Input Sources  输入源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Port-based-Sources基于端口的事件源"><span class="nav-number">2.2.1.</span> <span class="nav-text">Port-based Sources基于端口的事件源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-Input-Sources"><span class="nav-number">2.2.2.</span> <span class="nav-text">Custom Input Sources</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cocoa-Perform-Selector-Sources"><span class="nav-number">2.2.3.</span> <span class="nav-text">Cocoa Perform Selector Sources</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Timer-Sources"><span class="nav-number">2.2.4.</span> <span class="nav-text">Timer Sources</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-Loop-Observers"><span class="nav-number">2.3.</span> <span class="nav-text">Run Loop Observers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Run-Loop-Sequence-of-Events"><span class="nav-number">2.3.1.</span> <span class="nav-text">The Run Loop Sequence of Events</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#When-Would-You-Use-a-Run-Loop"><span class="nav-number">2.3.2.</span> <span class="nav-text">When Would You Use a Run Loop</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -808,6 +727,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
